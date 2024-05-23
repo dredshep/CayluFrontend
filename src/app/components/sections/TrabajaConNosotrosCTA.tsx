@@ -1,7 +1,5 @@
 import getPlaceholderImageUrl from "@/app/utils/getPlaceholderImageUrl";
 import Image from "next/image";
-import PlayStoreIcon from "../icons/PlaystoreIcon";
-import AppleIcon from "../icons/AppleIcon";
 
 export default function TrabajaconNosotrosCTA() {
   return (

@@ -1,16 +1,12 @@
 import Link from "next/link";
-import LocationIcon from "./components/icons/LocationIcon";
-import HamburgerIcon from "./components/icons/HamburgerIcon";
+import LocationIcon from "./components/icons/navbar/LocationIcon";
+import HamburgerIcon from "./components/icons/navbar/HamburgerIcon";
 import RestaurantCard from "./components/cards/RestaurantCard";
-import { popularEnTuZona, ofertasDeHoy } from "@/dummyData/FrontpageCards";
+import { popularEnTuZona, ofertasDeHoy } from "@/dummyData/frontpageCardData";
 import AppDownloadCTA from "./components/sections/AppDownloadCTA";
 import TrabajaconNosotrosCTA from "./components/sections/TrabajaConNosotrosCTA";
-import StarIcon from "./components/icons/StarIcon";
 import ReviewCard from "./components/cards/ReviewCard";
 import reviews from "@/dummyData/reviews";
-import FacebookIcon from "./components/icons/socials/FacebookIcon";
-import InstagramIcon from "./components/icons/socials/InstagramIcon";
-import TwitterIcon from "./components/icons/socials/TwitterIcon";
 function Navbar() {
   return (
     <nav>
@@ -57,9 +53,12 @@ export default function Home() {
                 placeholder="Paseo Prai de Silgar, 3, Sanxenxo"
               />
             </div>
-            <button className="bg-teal-400 text-black text-4xl py-[25px] px-[57px] rounded-[11px]">
+            <Link
+              href="/restaurantes"
+              className="bg-teal-400 text-black text-4xl py-[25px] px-[57px] rounded-[11px]"
+            >
               Buscar
-            </button>
+            </Link>
           </div>
         </div>
       </div>
@@ -106,24 +105,6 @@ export default function Home() {
           <button className="bg-teal-400 font-bold mx-auto text-black text-4xl p-[30px] rounded-[11px]">
             Déjanos un comentario
           </button>
-        </div>
-      </div>
-      {/* footer, black, 3 icons in the center: facebook, instagram and X */}
-      <div className="bg-black h-[128px] w-full flex justify-center items-center gap-[18px]">
-        <div className="text-white text-4xl">
-          <a href="https://www.facebook.com">
-            <FacebookIcon />
-          </a>
-        </div>
-        <div className="text-white text-4xl">
-          <a href="https://www.instagram.com">
-            <InstagramIcon />
-          </a>
-        </div>
-        <div className="text-white text-4xl">
-          <a href="https://www.twitter.com">
-            <TwitterIcon />
-          </a>
         </div>
       </div>
     </div>

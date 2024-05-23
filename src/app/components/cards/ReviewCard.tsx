@@ -41,9 +41,7 @@ const ReviewCard: React.FC<ReviewCardProps> = ({ review }) => {
           <StarIcon key={i} />
         ))}
       </div>
-      <div className="text-black text-base font-normal font-['Segoe UI']">
-        {review.reviewText}
-      </div>
+      <div>{review.reviewText}</div>
     </div>
   );
 };

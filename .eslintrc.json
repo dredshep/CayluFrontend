@@ -1,3 +1,14 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "no-unused-vars": "warn",
+    "no-console": "warn", // Warns against using console.log() and other console methods in production code
+    "no-alert": "warn", // Disallows the use of alert(), which is generally considered a bad practice
+    "no-debugger": "warn", // Disallows the use of debugger statements, which should not be present in production code
+    "no-empty": "warn", // Warns against empty block statements, which can indicate incomplete code
+    "no-magic-numbers": "off", // Disables the "no-magic-numbers" rule
+    "no-unused-expressions": "warn", // Warns against unused expressions, which can indicate a mistake or incomplete code
+    "prefer-const": "warn", // Suggests using const instead of let for variables that are not reassigned
+    "prefer-arrow-callback": "warn" // Suggests using arrow functions for callbacks, which can improve code readability
+  }
 }

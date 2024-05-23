@@ -1,6 +1,6 @@
 import getPlaceholderImageUrl from "@/app/utils/getPlaceholderImageUrl";
 
-interface RestaurantData {
+export interface RestaurantData {
   imageUrl: string;
   altText: string;
   name: string;

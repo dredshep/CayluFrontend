@@ -1,5 +1,5 @@
 import cn from "classnames";
-export default function LocationIcon({ className }: { className: string }) {
+export default function LocationIcon({ className }: { className?: string }) {
   return (
     <svg
       // width="38"
@@ -9,8 +9,8 @@ export default function LocationIcon({ className }: { className: string }) {
       xmlns="http://www.w3.org/2000/svg"
       className={cn({
         // if classnames include height and width, then use them, otherwise use the default
-        [className]: className,
-        "h-11 w-11": !className.includes("h-") && !className.includes("w-"),
+        [className ?? ""]: className,
+        "h-11 w-11": !className?.includes("h-") && !className?.includes("w-"),
       })}
     >
       <path
